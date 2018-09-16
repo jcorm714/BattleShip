@@ -3,14 +3,12 @@
 #include<iostream>
 #include<windows.h>
 #include<time.h>
+#include<vector>
 class Ocean {
 public:
-	char ocean[15][15];
-	
-	Ocean();
-	
+	char ocean[20][20];
+	Ocean(int oceanSize);
 	int GetSize() {return size;};
-	void SetSize(int value) { size = value; }
 	void GenerateOcean();
 	void PlaceBoat(int length, int orginX, int orginY, bool flipped);
 	void UpdateOcean();

@@ -1,7 +1,11 @@
 
 #include "Ocean.h";
 
+Ocean::Ocean(int oceanSize)
+	:size(oceanSize)
+{
 
+}
 
 
 
