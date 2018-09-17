@@ -21,6 +21,9 @@
     <ClInclude Include="Boat.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="GameMgr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Ocean.cpp">
@@ -30,6 +33,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="boat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameMgr.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
