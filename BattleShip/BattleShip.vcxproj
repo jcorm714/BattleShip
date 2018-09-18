@@ -115,11 +115,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="BattleShip.h" />
     <ClInclude Include="Boat.h" />
     <ClInclude Include="GameMgr.h" />
     <ClInclude Include="Ocean.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BattleShip.cpp" />
     <ClCompile Include="boat.cpp" />
     <ClCompile Include="GameMgr.cpp" />
     <ClCompile Include="main.cpp" />
