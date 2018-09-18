@@ -31,19 +31,19 @@ void Ocean::GenerateOcean() {
 	std::cout << "generated!";
 }
 
-void Ocean::PlaceBoat(int length, int orginX, int orginY, bool flipped)
+void Ocean::PlaceBoat(int length, Ocean::coords origin, bool flipped)
 {
 	
 	if (flipped) {
 		for (int i = 0; i < length; i++)
 		{
-			Ocean::ocean[orginX][orginY + i] = 'B';
+			Ocean::ocean[origin.x][origin.y + i] = 'B';
 		}
 	}
 	else if (!flipped)
 		for(int i = 0; i < length; i++)
 		{
-			Ocean::ocean[orginX + i][orginY] = 'B';
+			Ocean::ocean[origin.x + i][origin.y] = 'B';
 		}
 	else {
 
@@ -52,6 +52,14 @@ void Ocean::PlaceBoat(int length, int orginX, int orginY, bool flipped)
 
 }
 
+Ocean::coords Ocean::ReadCoords() {
+	Ocean::coords temp;
+	std::cout << "Enter the x coordinate: ";
+	std::cin >> temp.x;
+	std::cout << "\nEnter the y coordinate: ";
+	std::cin >> temp.y;
+	return temp;
+}
 
 
 void Ocean::DisplayOcean(int horizontalDisplacement, int verticleDisplacement) {

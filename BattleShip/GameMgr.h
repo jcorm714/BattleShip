@@ -16,7 +16,7 @@ public:
 	static char difficultySelect();
 private:
 	int difficulty;
-	int boatCount
+	int boatCount;
 	
 };
 
